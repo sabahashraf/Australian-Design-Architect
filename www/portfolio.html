@@ -1,0 +1,179 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title> Portfolio - ADA </title>
+
+  <meta name="author" content="Sabah Sabrina Ashraf AND sabahsabrina@yahoo.com">
+
+  <link rel="stylesheet" href="ada.css">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+<script src="js/jquery.isotope.js" type="text/javascript"></script> 
+ <script>
+$(function() {
+$("a[href=#menu-expand]").click(function(e) {
+$(".menu").toggleClass("menu-open");
+e.preventDefault();
+});
+});
+</script>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<div id="wrapper">
+<div id="inner-wrapper">
+
+<header>
+<a href="index.html"><img src="images/ada3.png"  alt="Australian Design Architects Logo" title="contact us to discuss your building design dreams"></a>
+</header>
+<div id="responsive-menu">
+<div class="menu-icon">
+<a href="#menu-expand"><img src="images/menu_icon.png" width="25" height="25" alt="Responsive Menu icon"/></a>
+</div>
+<nav id="primary" class="menu">
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="awards.html">Awards</a></li>
+  <li><a href="project.html">Project Design</a></li>
+  <li><a href="portfolio.html" id="current-page">Portfolio</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+
+<main>
+<img src="images/citysites.jpg"  alt="cities_image">
+<div id="container">
+<h1>Portfolio</h1>
+
+<p>At ADA we specialise in sophisticated and distinctive residential projects, from high quality individual houses to multi-unit apartment developments. ADA work encompasses a wide variety of architectural styles ranging from heritage restoration work to innovative contemporary buildings.</p>
+
+<p>Current commissions include residential, commercial, maritime, heritage restoration, refurbishment and interior fit-out projects.</p>
+</div>
+<br>
+<div class="portfolioFilter">
+
+	<a href="#" data-filter="*" class="current">All </a>
+	<a href="#" data-filter=".residential">residential</a>
+	<a href="#" data-filter=".multiresidential">multiresidential</a>
+	<a href="#" data-filter=".commercial">commercial</a>
+	<a href="#" data-filter=".interior">interior fit-outs</a>
+
+</div>
+
+<div class="portfolioContainer">
+
+	<div class="residential">
+		<img src="images/home2.jpeg" width="525" height="350" alt="image">
+	</div>
+	<div class="residential">
+		<img src="images/home3.jpeg" width="525" height="350" alt="image">
+	</div>
+	<div class="residential">
+		<img src="images/home4.jpeg" width="525" height="350" alt="image">
+	</div>
+	<div class="residential multiresidential">
+		<img src="images/homes.jpeg" width="525" height="350" alt="image">
+	</div>
+	<div class="multiresidential">
+		<img src="images/citysites.jpeg" width="525" height="350" alt="image">
+	</div>	
+	<div class="multiresidential">
+		<img src="images/tree_building.jpg" width="525" height="350" alt="image">
+	</div>	
+	<div class="multiresidential">
+		<img src="images/paper_building.jpg" width="525" height="350" alt="image">
+	</div>	
+	<div  class="multiresidential">
+		<img src="images/apartment3.jpeg" width="525" height="350" alt="image">
+	</div>	
+	<div class="commercial">
+		<img src="images/commercial1.jpeg" width="525" height="350" alt="image">
+	</div>	
+
+	<div class="commercial multiresidential">
+		<img src="images/commercial3.jpeg" width="525" height="350" alt="image">
+	</div>
+	<div class="commercial">
+		<img src="images/commercial2.jpeg" width="525" height="350" alt="image">
+	</div>
+	
+	<div class="interior">
+		<img src="images/interior1.jpg" width="525" height="350" alt="image">
+	</div>
+
+	<div class="interior">
+		<img src="images/interior2.jpeg" width="525" height="350" alt="image">
+	</div>
+
+	<div class="interior">
+		<img src="images/interior3.jpeg" width="525" height="350" alt="image">
+	</div>
+
+	<div class="interior">
+		<img src="images/interior4.jpeg"  width="525" height="350" alt="image">
+	</div>	
+	
+	
+	
+</div>
+<script type="text/javascript">
+
+$(window).load(function(){
+    var $container = $('.portfolioContainer');
+    $container.isotope({
+        filter: '*',
+        animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: false
+        }
+    });
+ 
+    $('.portfolioFilter a').click(function(){
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
+ 
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+         });
+         return false;
+    }); 
+});
+
+</script>
+
+</main>
+
+<footer>
+<ul>
+  <li>&copy; Australian Design Architects 2017</li>
+  <li><a href="legals.html">Legals</a></li>
+   <li><a href="https://www.facebook.com/ada"><img src="images/facebook.png" width="21" height="20" title="follow us on facebook" alt="facebook icon"/></a></li>
+  <li><a href="https://www.pinterest.com"><img src="images/pinterest.png" width="25" height="23" alt="pinterest icon"></a></li>
+  <li><a href="https://www.instagram.com/ada"><img src="images/instagram.png" width="21" height="20" title="post your ada pics here" alt="instagram icon"/></a></li>
+</ul>
+</footer>
+
+</div> 
+</div> 
+
+</body>
+</html> 

@@ -1,0 +1,112 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title> Contact-ADA </title>
+  
+<meta name="author" content="Sabah Sabrina Ashraf AND sabahsabrina@yahoo.com">
+  <link rel="stylesheet" href="ada.css">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script>
+$(function() {
+$("a[href=#menu-expand]").click(function(e) {
+$(".menu").toggleClass("menu-open");
+e.preventDefault();
+});
+});
+</script>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+<div id="wrapper">
+<div id="inner-wrapper">
+
+<header>
+<a href="index.html"><img src="images/ada3.png"  alt="Australian Design Architects Logo" title="contact us to discuss your building design dreams"></a>
+</header>
+<div id="responsive-menu">
+<div class="menu-icon">
+<a href="#menu-expand"><img src="images/menu_icon.png" width="25" height="25" alt="Responsive Menu icon"/></a>
+</div>
+
+<nav id="primary" class="menu">
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="awards.html">Awards</a></li>
+  <li><a href="project.html">Project Design</a></li>
+  <li><a href="portfolio.html">Portfolio</a></li>
+  <li><a href="contact.html" id="current-page">Contact</a></li>
+</ul>
+</nav>
+</div>
+
+<main>
+<img class ="img" src="images/arc.jpg"  alt="arc_image">
+<h1>Contact</h1>
+<h2>Street Address:</h2>
+<p>35 Macdonald Street</p>
+<p>Lakemba, Sydney, NSW-2195</p>
+<p>Australia</p>
+<h2>Phone:</h2>
+<p>02 5968 4585</p>
+<h2>Email:</h2>
+<p>info@ada.com.au</p>
+
+<h2>Google Map</h2>
+<br>
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:400px;width:600px;'><div id='gmap_canvas' style='height:400px;width:600px;'></div><div><small><a href="http://embedgooglemaps.com">embed google maps</a></small></div><div><small><a href="https://Enablecookies.info/">Enablecookies.info</a></small></div></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(-33.916499,151.07287999999994),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-33.916499,151.07287999999994)});infowindow = new google.maps.InfoWindow({content:'<strong>Australian Design Architects</strong><br>35 macdonald street lakemba<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+<!--https://embedgooglemaps.com/en/-->
+<br>
+<h2>Contact Form</h2>
+
+
+<div class="container">
+  <form action="/action_page.php">
+
+    <label for="fname"> Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+
+
+    <label for="phoneno">Phone Number</label>
+    <input type="text" id="phoneno" name="phoneno" placeholder="Your phone number..">
+
+
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+<br>
+</main>
+
+<footer>
+<ul>
+  <li>&copy; Australian Design Architects 2017</li>
+  <li><a href="legals.html">Legals</a></li>
+  <li><a href="https://www.facebook.com/ada"><img src="images/facebook.png" width="21" height="20" title="follow us on facebook" alt="facebook icon"/></a></li>
+  <li><a href="www.pinterest.com"><img src="images/pinterest.png" width="25" height="23" alt="instagram icon"></a></li>
+  <li><a href="https://www.instagram.com/ada"><img src="images/instagram.png" width="21" height="20" title="post your ada pics here" alt="instagram icon"/></a></li>
+</ul>
+</footer>
+
+</div> 
+</div> 
+
+</body>
+</html> 
